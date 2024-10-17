@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+body {
+    /* height: 100vh; */
+    /* width: 100%; */
+}
+
+p {
+    text-align: justify;
+}
+
+h1, h2 {
+    text-align: center;
+    align-content: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+header {
+    height: 5rem;
+    padding: 0.5rem 5%;
+    background-color: #d4d4d4;
+}
+
+nav {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    color: #515151;
+}
+
+main {
+    height: calc(100vh - 5rem);
+    overflow: auto;
+}
+
+section {
+    height: 100%;
+    padding: 0 5%;
+    border-radius: 6px;
+}
+
+#inicio {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.pixabay.com/photo/2018/08/02/10/31/iphone-3579238_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio h2 {
+    color: white;
+    font-size: 25px;
+}
+
+p {
+    text-align: justify;
+}
+
+#contexto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+#impactos {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.pixabay.com/photo/2015/11/05/09/52/touch-screen-1023966_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.texto {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto h2{
+    margin-bottom: 1rem;
+}
+
+section img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#pesquisas {
+    height: 110%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.table {
+    height: 110%;
+    /* padding: 5px 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.pixabay.com/photo/2018/08/02/10/29/iphone-3579236_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.table a {
+    color: white;
+}
+
+.porcentagem {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+tr, td {
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+
+#conclusao {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #9ea09d;
+}
+
+#conclusao h2 {
+    text-align: center; 
+    font-size: 30px;
+    margin-top: 3rem;
+    margin-bottom: 2rem; 
+}
+
+.conteudo {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 2rem; 
+    width: 100%; 
+    font-size: 20px;
+}
+
+#conclusoes {
+    height: min-content;
+}
+
+#conclusoes .conclusao {
+    flex: 1; 
+    padding: 3rem;
+}
+
+footer {
+    background-color: #d4d4d4;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1.5rem 5%;
+}
+
+.comentarios form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.comentarios h3 {
+    text-align: start;
+    padding-bottom: 10px;
+}
+
+.fontes ul{
+    list-style: none;
+    text-align: center;
+}
+
+.fontes li{
+    padding: 8px;
+}
+
+.ajuda ul{
+    list-style: none;
+    text-align: center;
+}
+
+.ajuda li{
+    padding: 8px;
+}
+
+button {
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #333;
+    color: white;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #686161;
+}
+
+@media (max-width: 768px) {
+    section {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 5%;
+    }
+
+    #inicio {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 5%;
+        min-height: 100%;
+    }
+
+    header {
+        /* display: none; */
+        padding: 0.5rem 5%;
+        height: min-content;
+    }
+
+    header h1{
+        font-size: x-large;
+    }
+
+    #contexto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #impactos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pesquisas {
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table {
+        height: min-content;
+    }
+
+    .conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #conclusao .conclusao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        align-items: center;
+        /* padding: 2rem 5%; */
+    }
+}
